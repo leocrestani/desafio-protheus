@@ -54,3 +54,13 @@ Para auxiliar o entendimento do desafio, elaboramos um diagrama de entidade rela
 * Sentido e coerência nas respostas aos questionamentos na entrevista de apresentação do desafio realizada pelo candidato.
 
 **Não esqueça de documentar o processo necessário para rodar a aplicação.**
+
+# Para executar a aplicação
+* É necessário um servidor que execute PHP e banco de dados MySQL ou MariaDB;
+* Para rápida configuração é recomendada a instalação do [XAMPP](https://www.apachefriends.org/);
+* Após a instalação dos módulos Apache e php do XAMPP é só mover ou clonar o repositório para dentro da pasta htdocs localizada dentro do local de instalação do XAMPP e iniciar o XAMPP Control Panel;
+* O banco de dados deve ser criado dentro da aplicação de banco de dados escolhida, você pode utilizar o modulo MySQL que vem juntamente com o XAMPP ou instalar o MySQL Comunity Server, por exemplo. O arquivo de export se encontra nos arquivos deste repositório com o nome brapi.sql;
+* As configurações de acesso ao banco de dados se encontram em desafio-protheus/application/config/database.php, deve ser informado o hostname (localhost se utilizar o XAMPP) e credênciais para acesso ao banco;
+* A url padrão está definida como localhost, caso a url de execução seja diferente por conta do servidor, é necessário alterar a url base em desafio-protheus/application/config/config.php, alterar a variável $config['base_url'];
+* Após tudo configurado é só acessar a url através do navegador (a execução pode demorar alguns minutos dependendo das configurações do servidor, não dê refresh nem feche a aba até que a execução esteja completa);
+* Se tudo configurado como padrão utilizando o XAMPP a url deverá ser: http://localhost/desafio-protheus/
